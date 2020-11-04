@@ -22,7 +22,9 @@ void loop() {
     a = s.toInt();
   }
     s="";
-
+  
+  Serial.println(a);
+  
   Serial.println("Podaj druga liczbe:");
   
   while (Serial.available() < 1)
@@ -38,6 +40,8 @@ void loop() {
   }
     s="";
 
+  Serial.println(b);
+  
   Serial.println("Podaj dzialanie(+,-,/,*):");
   
   while (Serial.available() < 1)
@@ -72,7 +76,7 @@ void loop() {
     else
     {
     Serial.print("Wynik to: ");
-    Serial.println(float(a/b));
+    Serial.println(float(1.0*a/b));
     }
   }
   else
